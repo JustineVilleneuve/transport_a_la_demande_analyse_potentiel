@@ -1,0 +1,28 @@
+# Ignore temporary MS Office files
+~$*
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore VS Code settings
+.vscode/
+
+# Ignore Jupyter cache
+.ipynb_checkpoints/
+
+# --- Python / notebooks
+__pycache__/
+.ipynb_checkpoints/
+
+# zip files
+*.zip
+01_data/14-11-2025_Backup_data_brute.zip
+
+# --- raw & heavy data (not versioned)
+01_data/01_data_bronze/
+01_data/02_data_silver/
+02_cleaning_python/data_freq_details/
+
+# large specific files
+02_cleaning_python/star_freq_details.csv

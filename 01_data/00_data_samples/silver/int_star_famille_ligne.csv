@@ -1,0 +1,13 @@
+famille_ligne,count_id_ligne,description_famille,continuite_service,regulier_ponctuel
+BreizhGo,1,lignes de cars inter-communales ou régionales intégrées ou en correspondance (6 familles),continu,regulier 
+CHRONOSTAR,173,"Lignes C1 à C7 et C7ex. Famille de lignes de bus à haut niveau de service (BHNS). Lignes les plus rapides, les plus fréquentes et les plus structurantes du réseau bus.",continu,regulier
+Complémentaire,798,"Lignes numérotées 200-245, ouvertes à tous les voyageurs mais avec un rôle de desserte locale/scolaire",scolaire,regulier
+Evènementiel,402,"Lignes spéciales ou saisonnières (ex : estivales, bus de stade)",horaires ciblés,ponctuel
+Express,238,Services « ex » ou « express » associés aux lignes métropolitaines (ex : 152ex pour la ligne 52),horaires ciblés,regulier
+Inter-quartiers,98,"Lignes numérotées en « 3x » (32, 34, 35, 37, 38, 39) qui relient quartiers ou communes sans forcément passer par le centre-ville",continu,regulier
+Intercommunale,77,"Relient plusieurs communes de la métropole sans passer nécessairement par le centre-ville de Rennes, ou qui desservent les communes périphériques",continu,regulier
+Métropolitaine,989,Lignes numérotées 50 à 83 (desservant les communes plus éloignées autour de Rennes),continu,regulier
+Spéciale,6,"Regroupe des lignes hors-catalogue ou à usage ponctuel/évènementiel (ex : navettes spécifiques, dessertes de sites, services temporaires)",horaires ciblés,ponctuel
+STAR de Nuit,23,Lignes de nuit (ex : N1 à N5) qui circulent les soirs ou semaines spéciales,horaires ciblés,ponctuel
+Transport scolaire,603,Lignes «TS1 à TS91» (et parfois RPI-1) réservées aux collégiens/lycéens,horaires ciblés,regulier
+Urbaine,106,"Lignes urbaines classiques, circulant principalement dans Rennes",continu,regulier
