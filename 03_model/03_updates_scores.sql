@@ -1,5 +1,5 @@
 /* ============================================================
-   Injection du score de demande (version 1)
+   Injection du score de demande
    ============================================================ */
 
 UPDATE communes_indicateurs_mobilite cim

@@ -6,7 +6,7 @@
 
 
 /* ============================================================
-   Score de demande (version 1)
+   Score de demande
    ============================================================ */
 
 CREATE OR REPLACE VIEW v_score_demande AS
@@ -26,39 +26,9 @@ WITH norm AS (
 )
 SELECT
     code_geo,
-    0.6 * rev_median_norm
+    0.6 * (1 - rev_median_norm)
   + 0.4 * taux_motorisation_norm
     AS score_demande
-FROM norm;
-
-
-/* ============================================================
-   Score de demande (version 2, avec fréquentation)
-   ============================================================ */
-
-CREATE OR REPLACE VIEW v_score_demande_2 AS
-WITH norm AS (
-    SELECT
-        code_geo,
-
-        (rev_median - MIN(rev_median) OVER ())
-        / NULLIF(MAX(rev_median) OVER () - MIN(rev_median) OVER (), 0)
-        AS rev_median_norm,
-
-        (taux_motorisation - MIN(taux_motorisation) OVER ())
-        / NULLIF(MAX(taux_motorisation) OVER () - MIN(taux_motorisation) OVER (), 0)
-        AS taux_motorisation_norm,
-
-        ratio_frequentation_norm
-
-    FROM communes_indicateurs_mobilite
-)
-SELECT
-    code_geo,
-    0.3 * rev_median_norm
-  + 0.2 * taux_motorisation_norm
-  + 0.5 * ratio_frequentation_norm
-    AS score_demande_2
 FROM norm;
 
 
