@@ -19,6 +19,10 @@ __pycache__/
 *.zip
 01_data/14-11-2025_Backup_data_brute.zip
 
+# powerpoint
+*.ppt 
+*.pptx 
+
 # --- raw & heavy data (not versioned)
 01_data/01_data_bronze/
 01_data/02_data_silver/
